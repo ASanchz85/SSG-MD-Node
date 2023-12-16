@@ -1,0 +1,21 @@
+extends layout 
+
+block metas 
+  title Home de #{title}
+  meta(name="description", content="Home de #{title}")
+
+block content
+  main.container
+    h1= title
+    p Welcome to #{title}
+    nav
+      ul
+        li
+          a(href="/") Home
+        li
+          a(href="/contact") Contact
+        li 
+          a(href="/git") Git
+        li 
+          a(href="/nodejs") NodeJS
+
